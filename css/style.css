@@ -54,6 +54,12 @@
   animation: arcLeftMotion 21s linear infinite;
 }
 
+.bluefish {
+  max-width: 200px;
+  position: relative;
+  z-index: 1;
+}
+
 .codfish {
   z-index: auto;
   bottom: 23px;
