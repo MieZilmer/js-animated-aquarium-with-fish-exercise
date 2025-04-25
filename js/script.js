@@ -52,7 +52,14 @@ anchor.addEventListener("mouseenter", () => {
  
    fishElem.forEach((el) => {
      el.addEventListener("click", (e) => {
-       tooltip.innerText = `${fish.art} — Alder: ${fish.alder}`;
+      tooltip.innerHTML = `
+      <strong>${fish.art}</strong><br>
+      Latinsk navn: ${fish.latinsknavn}<br>
+      Alder: ${fish.alder}<br>
+      Længde: ${fish.længde}<br>
+      Vægt: ${fish.vægt}<br>
+      Levested: ${fish.levested}
+    `;
        tooltip.style.top = `${e.pageY - 40}px`;
        tooltip.style.left = `${e.pageX + 20}px`;
        tooltip.style.opacity = "1";
@@ -65,6 +72,8 @@ anchor.addEventListener("mouseenter", () => {
      });
    });
  });
+
+
 
  });
 
