@@ -44,7 +44,80 @@ anchor.addEventListener("mouseenter", () => {
       længde: "Op til 100 cm 📏",
       vægt: "Typisk 2–4 kg⚖️",
       levested: "Mexicanske Golf og det sydøstlige USA🌍"
+    },
+    {
+      className: "orangefish",
+      art: "Tropefisk (orange) 🐠",
+      alder: "1–3 år",
+      latinsknavn: "Amphiprioninae",
+      længde: "5–15 cm 📏",
+      vægt: "100–300 g ⚖️",
+      levested: "Koralrev i Stillehavet og Det Indiske Ocean 🌍"
+    },
+    {
+      className: "flatbluefish",
+      art: "Kirurgfisk (blå) 🐟",
+      alder: "Op til 20 år",
+      latinsknavn: "Paracanthurus hepatus",
+      længde: "Op til 30 cm 📏",
+      vægt: "Typisk 600 g ⚖️",
+      levested: "Korallrev i det tropiske Stillehav 🌍"
+    },
+    {
+      className: "bluefish",
+      art: "Blåfisk 🐟",
+      alder: "Op til 9 år",
+      latinsknavn: "Pomatomus saltatrix",
+      længde: "Op til 1 m 📏",
+      vægt: "Typisk 2–14 kg ⚖️",
+      levested: "Tempererede og tropiske havområder 🌍"
+    },
+    {
+      className: "codfish",
+      art: "Torsk 🐟",
+      alder: "Op til 25 år",
+      latinsknavn: "Gadus morhua",
+      længde: "Op til 150 cm 📏",
+      vægt: "Op til 40 kg ⚖️",
+      levested: "Nordlige Atlanterhav, især omkring Danmark 🌍"
+    },
+    {
+      className: "tropicalfish",
+      art: "Tropisk fisk 🐠",
+      alder: "1–5 år",
+      latinsknavn: "Chaetodon (sommerfuglefisk)",
+      længde: "5–20 cm 📏",
+      vægt: "100–500 g ⚖️",
+      levested: "Koralrev i varme oceaner 🌍"
+    },
+    {
+      className: "pirate-fish",
+      art: "Piratfisk 🏴‍☠️",
+      alder: "10 år",
+      latinsknavn: "Fictus piraticus",
+      længde: "20-30 cm 📏",
+      vægt: "1-3 kg ⚖️",
+      levested: "Amazonfloderne 🌍"
+    },
+    {
+      className: "red-booble-fish",
+      art: "Rød boblefisk 🐡",
+      alder: "Ukendt",
+      latinsknavn: "Fictus ruber bulla",
+      længde: "20 cm 📏",
+      vægt: "300 g ⚖️",
+      levested: "Fantasihav 🌍"
+    },
+    {
+      className: "striped-orange-fish",
+      art: "Klovnfisk 🐠",
+      alder: "Op til 6 år",
+      latinsknavn: "Amphiprion ocellaris",
+      længde: "Op til 11 cm 📏",
+      vægt: "Op til 250 g ⚖️",
+      levested: "Koraller i Stillehavet og Det Indiske Ocean 🌍"
     }
+
  ];
 
  fishInfo.forEach((fish) => {
