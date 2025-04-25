@@ -38,12 +38,12 @@ anchor.addEventListener("mouseenter", () => {
  const fishInfo = [
    {
       className: "redfish",
-      art: "Rød Snapper",
+      art: "Rød Snapper🐟",
       alder: "2 år",
       latinsknavn: "Lutjanus campechanus",
-      længde: "Op til 100 cm",
-      vægt: "Typisk 2–4 kg",
-      levested: "Mexicanske Golf og det sydøstlige USA"
+      længde: "Op til 100 cm 📏",
+      vægt: "Typisk 2–4 kg⚖️",
+      levested: "Mexicanske Golf og det sydøstlige USA🌍"
     }
  ];
 

@@ -168,15 +168,16 @@
 
 #tooltip {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.75);
-  color: white;
+  background-image: url('../img/ocean-texture.jpg');
+  color: black;
   padding: 6px 10px;
   border-radius: 6px;
   font-size: 14px;
   pointer-events: none;
-  opacity: 0;
+  opacity: 50;
   transition: opacity 0.3s ease;
   z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* ANIMATIONER */
