@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const anchor = document.querySelector(".anchor");
 const anchorTooltip = document.getElementById("anchor-tooltip");
 const audio = document.querySelector("audio");
+const tooltip = document.getElementById("tooltip");
 
 
 anchor.addEventListener("mouseenter", () => {
@@ -31,6 +32,38 @@ anchor.addEventListener("mouseenter", () => {
    } else {
      audio.pause();
    }
+ });
+
+
+ const fishInfo = [
+   {
+      className: "redfish",
+      art: "Rød Snapper",
+      alder: "2 år",
+      latinsknavn: "Lutjanus campechanus",
+      længde: "Op til 100 cm",
+      vægt: "Typisk 2–4 kg",
+      levested: "Mexicanske Golf og det sydøstlige USA"
+    }
+ ];
+
+ fishInfo.forEach((fish) => {
+   const fishElem = document.querySelectorAll("." + fish.className);
+ 
+   fishElem.forEach((el) => {
+     el.addEventListener("click", (e) => {
+       tooltip.innerText = `${fish.art} — Alder: ${fish.alder}`;
+       tooltip.style.top = `${e.pageY - 40}px`;
+       tooltip.style.left = `${e.pageX + 20}px`;
+       tooltip.style.opacity = "1";
+       tooltip.style.fontSize = "1.15rem";
+ 
+       // Hide tooltip after 3 seconds
+       setTimeout(() => {
+         tooltip.style.opacity = "0";
+       }, 3000);
+     });
+   });
  });
 
  });
