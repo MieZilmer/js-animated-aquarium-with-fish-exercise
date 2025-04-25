@@ -58,6 +58,8 @@
   max-width: 200px;
   position: relative;
   z-index: 1;
+  animation: zigzag 12s linear infinite;   
+  /* Har puttet animation på denne, da den ikke havde nogen */
 }
 
 .codfish {
