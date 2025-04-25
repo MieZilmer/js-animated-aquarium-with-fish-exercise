@@ -117,10 +117,34 @@
   animation: arcLeftMotion 20s linear infinite;
 }
 
+.pirate-fish {
+  bottom: 40px;
+  right: 720px;
+  width: 100px;
+  height: 94px;
+  animation: bounce 2s infinite; 
+}
+
+.red-booble-fish {
+  bottom: 245px;
+  right: 200px;
+  width: 100px;
+  height: 94px;
+  animation: drift 5s ease-in-out infinite;
+}
+
+.striped-orange-fish {
+  bottom: 460px;
+  right: 700px;
+  width: 100px;
+  height: 94px;
+  animation: circularMotion 5s linear infinite;  
+}
+
 .small-clam {
   z-index: auto;
   bottom: 20px;
-  right: 320px;
+  right: 200px;
 }
 
 .big-clam {
@@ -225,6 +249,55 @@
     transform: translate(2560px, -120px);
   }
 }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  40% {
+    transform: translateY(-30px); /* Move up */
+  }
+  60% {
+    transform: translateY(-15px); /* Slightly less bounce */
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0); /* Start at the original position */
+  }
+  25% {
+    transform: translate(100px, -100px); /* Move slightly right and up */
+  }
+  50% {
+    transform: translate(0, -200px); /* Move back to center and up */
+  }
+  75% {
+    transform: translate(-100px, -100px); /* Move slightly left and up */
+  }
+  100% {
+    transform: translate(0, 0); /* Return to the original position */
+  }
+}
+
+@keyframes circularMotion {
+  0% {
+    transform: translate(-50px, -50px) rotate(0deg);
+  }
+  25% {
+    transform: translate(50px, -50px) rotate(90deg);
+  }
+  50% {
+    transform: translate(50px, 50px) rotate(180deg);
+  }
+  75% {
+    transform: translate(-50px, 50px) rotate(270deg);
+  }
+  100% {
+    transform: translate(-50px, -50px) rotate(360deg);
+  }
+}
+
 
 .spin-grow {
   animation: spinGrow 1s ease;
